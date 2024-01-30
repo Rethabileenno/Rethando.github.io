@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#c7e4c4;
+  
+}
+
+header {
+    background-color:yellowgreen; 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+        padding: 5px 0; 
+        font-size: 12px;
+    }
+  }
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    background-color: #689f38; 
+    color: white; 
+    padding: 10px;
+    width: 200px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px; 
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #689f38; 
+    color: darkcyan; 
+}
+
+.social-media {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media a {
+    color: #333; 
+    margin: 10px;
+}
+
+.social-media a:hover {
+    color: #c7e4c4;
+}
+
+.social-link {
+    margin-right: 10px; 
+  }
+
+
+.product {
+    width: 200px; 
+    margin: 20px; 
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.description, .price {
+    text-align: center;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1);
+}
+
+.product {
+   
+    overflow: hidden;
+}
+
+.product img {
+   
+    border: 2px solid #000; 
+}
+.product:hover .description, 
+.product:hover .price {
+    background-color:yellowgreen; 
+    font-size: 1.2em;
+}
+
+p button{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color:darkcyan;
+    border: none;
+    border-radius:35px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.p button:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color:yellowgreen;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
